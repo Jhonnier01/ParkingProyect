@@ -1,6 +1,8 @@
 package co.edu.poli.parkingproyect.model;
 
 import co.edu.poli.parkingproyect.controller.MainSceneController;
+import co.edu.poli.parkingproyect.dao.Conexion;
+
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
