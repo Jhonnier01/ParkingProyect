@@ -48,7 +48,7 @@
                   <TextField fx:id="TFingresoApellido" layoutX="38.0" layoutY="173.0" promptText="Apellido" />
                   <TextField fx:id="TFingresoPlaca" layoutX="38.0" layoutY="210.0" promptText="Placa" />
                   <TextField fx:id="TFingresoHora" layoutX="38.0" layoutY="247.0" promptText="Hora de ingreso" />
-                  <TextField editable="false" layoutX="378.0" layoutY="138.0" style="-fx-background-color: #837b7b;" />
+                  <TextField fx:id="TFDisponibilidad" editable="false" layoutX="378.0" layoutY="138.0" style="-fx-background-color: #837b7b;" />
                   <Label fx:id="Lingreso3" layoutX="378.0" layoutY="111.0" text="¿Espacio disponible?" />
                   <Button fx:id="BotonRegistrar" layoutX="69.0" layoutY="301.0" mnemonicParsing="false" onAction="#BotonRegistrar" text="Registrar" />
                   <Label fx:id="Lingreso5" layoutX="217.0" layoutY="332.0" text="NOTA: la hora de ingreso se debe digitar en horario militar sin puntos" />
@@ -93,11 +93,12 @@
         <content>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                <children>
-                  <TableView fx:id="TableRegistros" layoutX="53.0" layoutY="101.0" prefHeight="200.0" prefWidth="506.0">
+                  <TableView fx:id="TableRegistros" layoutX="4.0" layoutY="100.0" prefHeight="233.0" prefWidth="588.0">
                     <columns>
-                      <TableColumn fx:id="RegistroPlaca" prefWidth="95.0" text="Placa" />
-                      <TableColumn fx:id="RegistroNombre" prefWidth="300.0" text="Nombre" />
-                        <TableColumn fx:id="RegistroHora" prefWidth="110.0" text="Hora ingreso" />
+                      <TableColumn fx:id="RegistroPlaca" prefWidth="124.0" text="Placa" />
+                      <TableColumn fx:id="RegistroNombre" prefWidth="235.0" text="Nombre" />
+                        <TableColumn fx:id="RegistroHora" prefWidth="99.0" text="Hora ingreso" />
+                        <TableColumn fx:id="RegistroHora1" prefWidth="157.0" text="hora de salida" />
                     </columns>
                   </TableView>
                   <Label fx:id="Lregistros1" layoutX="210.0" layoutY="44.0" text="Registros actuales" textFill="#0e59e4">
